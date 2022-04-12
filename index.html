@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projeto JavaScript 4</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+    
+<div id="container">
+    <h1>Lâmpada</h1>
+    <img id="img" src="./img/lampada.png">
+</div>
+
+<div id="botaoDesligar">
+    <button id="desligar" onclick="MudarCor(7)"><img src="./img/botão.webp"></button>
+    
+</div>
+
+<div class="botoes">
+    <button id="b1" onclick="MudarCor(1)">Verde</button>
+    <button id="b2" onclick="MudarCor(2)">Vermelho</button>
+    <button id="b3" onclick="MudarCor(3)">Azul</button>
+    <button id="b4" onclick="MudarCor(4)">Branco</button>
+    <button id="b5" onclick="MudarCor(5)">Amarelo</button>
+    <button id="b6" onclick="MudarCor(6)">Laranja</button>
+
+</div>
+
+<script>
+    const i= document.getElementById("img")
+
+    function MudarCor(valor) {
+        if (valor == 1) {
+            i.src = "./img/lampadaVerde.png" 
+        }if (valor == 2) {
+            i.src= "./img/lampadaVermalha.png"
+        }if (valor == 3) {
+            i.src= "./img/lampadaAzul.png"
+        }if (valor == 4) {
+            i.src= "./img/lampadaBranca.png"
+        }if (valor == 5) {
+            i.src= "./img/lampadaAmarela.png"
+        }if (valor == 6) {
+            i.src= "./img/lampadaLaranja.png"
+        }if (valor == 7){
+            i.src= "./img/lampada preta.png"
+
+    }
+}
+
+</script>
+
+
+</body>
+</html>
